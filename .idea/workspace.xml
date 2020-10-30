@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f92b64e8-7ac2-48d7-b296-d4a0320cbb75" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/cancerBiobank304/DBConnect.class" afterPath="$PROJECT_DIR$/out/production/cancerBiobank304/DBConnect.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/DBConnect.java" afterPath="$PROJECT_DIR$/src/DBConnect.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/sql/cancerBiobank.sql" afterPath="$PROJECT_DIR$/src/sql/cancerBiobank.sql" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -72,16 +71,11 @@
       <file leaf-file-name="DBConnect.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/DBConnect.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="331">
-              <caret line="36" column="13" lean-forward="true" selection-start-line="36" selection-start-column="13" selection-end-line="36" selection-end-column="13" />
+            <state relative-caret-position="21">
+              <caret line="29" column="0" lean-forward="true" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
               <folding>
-                <marker date="1604095408800" expanded="true" signature="213:435" ph="CREATE TABLE... Authors" />
-                <marker date="1604095408800" expanded="true" signature="647:660" ph="CREATE TABLE... Author" />
-                <marker date="1604095408800" expanded="true" signature="647:666" ph="CREATE TABLE... AuthormissingValuemissingValuemissingValue" />
-                <marker date="1604095408800" expanded="true" signature="647:676" ph="CREATE TABLE... Authorau_id" />
-                <marker date="1604095408800" expanded="true" signature="647:694" ph="CREATE TABLE... Authorau_id" />
-                <marker date="1604095408800" expanded="true" signature="647:698" ph="CREATE TABLE... AuthorIF" />
-                <marker date="1604095408800" expanded="true" signature="897:918" ph="SELECT * FRO... authors" />
+                <element signature="imports" expanded="true" />
+                <marker date="1604095687480" expanded="true" signature="633:654" ph="SELECT * FRO... authors" />
               </folding>
             </state>
           </provider>
@@ -99,8 +93,8 @@
       <file leaf-file-name="cancerBiobank.sql" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/sql/cancerBiobank.sql">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
-              <caret line="19" column="0" lean-forward="true" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+            <state relative-caret-position="90">
+              <caret line="6" column="10" lean-forward="true" selection-start-line="6" selection-start-column="10" selection-end-line="6" selection-end-column="10" />
               <folding />
             </state>
           </provider>
@@ -360,12 +354,12 @@
       <option name="presentableId" value="Default" />
       <updated>1603668190886</updated>
       <workItem from="1603668196916" duration="3839000" />
-      <workItem from="1603830556862" duration="1637000" />
+      <workItem from="1603830556862" duration="1897000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="5476000" />
+    <option name="totallyTimeSpent" value="5736000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="415" y="23" width="1025" height="877" extended-state="0" />
@@ -380,7 +374,7 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32806325" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32806325" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -443,14 +437,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/sql/cancerBiobank.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="19" column="0" lean-forward="true" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="das://table:/c7a70176/a230ddf7-7d66-49ec-b2c0-dbe1ae48e822/cancerBiobank.Author">
       <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
         <state>
@@ -458,18 +444,21 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/sql/cancerBiobank.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="10" lean-forward="true" selection-start-line="6" selection-start-column="10" selection-end-line="6" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/DBConnect.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="331">
-          <caret line="36" column="13" lean-forward="true" selection-start-line="36" selection-start-column="13" selection-end-line="36" selection-end-column="13" />
+        <state relative-caret-position="21">
+          <caret line="29" column="0" lean-forward="true" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
           <folding>
-            <marker date="1604095408800" expanded="true" signature="213:435" ph="CREATE TABLE... Authors" />
-            <marker date="1604095408800" expanded="true" signature="647:660" ph="CREATE TABLE... Author" />
-            <marker date="1604095408800" expanded="true" signature="647:666" ph="CREATE TABLE... AuthormissingValuemissingValuemissingValue" />
-            <marker date="1604095408800" expanded="true" signature="647:676" ph="CREATE TABLE... Authorau_id" />
-            <marker date="1604095408800" expanded="true" signature="647:694" ph="CREATE TABLE... Authorau_id" />
-            <marker date="1604095408800" expanded="true" signature="647:698" ph="CREATE TABLE... AuthorIF" />
-            <marker date="1604095408800" expanded="true" signature="897:918" ph="SELECT * FRO... authors" />
+            <element signature="imports" expanded="true" />
+            <marker date="1604095687480" expanded="true" signature="633:654" ph="SELECT * FRO... authors" />
           </folding>
         </state>
       </provider>

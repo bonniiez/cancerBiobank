@@ -1,3 +1,4 @@
+drop table authors;
 
 create table authors
 (au_id char(11) not null,
