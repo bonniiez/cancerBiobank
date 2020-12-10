@@ -18,4 +18,5 @@ insert into authors values ('213-46-8915', 'Green', 'Marjorie',
 insert into authors values('238-95-7766', 'Carson', 'Cheryl',
                            '415 548-7723', '589 Darwin Ln.', 'Berkeley', 'CA', '94705');
 
+insert into authors values('409-56-9203', 'John', 'Doe', '415 234-2345', '9323 Doe St.', 'Dou', 'CA', '25123');
 
