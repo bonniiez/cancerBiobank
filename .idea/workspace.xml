@@ -2,16 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f92b64e8-7ac2-48d7-b296-d4a0320cbb75" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/mysql_connector_java_8_0_22.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/cancerBiobank304/DBConnect.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/gui/login.java" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/DBConnect.java" afterPath="$PROJECT_DIR$/src/database/DBConnect.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/cancerBiobank304/controller/CancerBiobank.class" afterPath="$PROJECT_DIR$/out/production/cancerBiobank304/controller/CancerBiobank.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/cancerBiobank304/database/DBConnect.class" afterPath="$PROJECT_DIR$/out/production/cancerBiobank304/database/DBConnect.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/cancerBiobank304/gui/Login$1.class" afterPath="$PROJECT_DIR$/out/production/cancerBiobank304/gui/Login$1.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/cancerBiobank304/gui/login.class" afterPath="$PROJECT_DIR$/out/production/cancerBiobank304/gui/login.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources/a230ddf7-7d66-49ec-b2c0-dbe1ae48e822.xml" afterPath="$PROJECT_DIR$/.idea/dataSources/a230ddf7-7d66-49ec-b2c0-dbe1ae48e822.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cancerBiobank304.iml" afterPath="$PROJECT_DIR$/cancerBiobank304.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/cancerBiobank304/sql/cancerBiobank.sql" afterPath="$PROJECT_DIR$/out/production/cancerBiobank304/sql/cancerBiobank.sql" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/sql/cancerBiobank.sql" afterPath="$PROJECT_DIR$/src/sql/cancerBiobank.sql" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/controller/CancerBiobank.java" afterPath="$PROJECT_DIR$/src/controller/CancerBiobank.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/database/DBConnect.java" afterPath="$PROJECT_DIR$/src/database/DBConnect.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/delegates/loginDelegate.java" afterPath="$PROJECT_DIR$/src/delegates/loginDelegate.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/gui/Login.form" afterPath="$PROJECT_DIR$/src/gui/Login.form" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/gui/Login.java" afterPath="$PROJECT_DIR$/src/gui/Login.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -56,20 +56,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Login.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/gui/Login.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="275">
-              <caret line="37" column="43" lean-forward="true" selection-start-line="37" selection-start-column="43" selection-end-line="37" selection-end-column="43" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#1423#1424#0" expanded="true" />
-                <element signature="e#1480#1481#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="Login.form" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/gui/Login.form">
           <provider selected="true" editor-type-id="ui-designer">
@@ -77,17 +63,42 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="loginDelegate.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/delegates/loginDelegate.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="255">
+              <caret line="17" column="0" lean-forward="true" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="DBConnect.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/database/DBConnect.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="359">
-              <caret line="83" column="37" lean-forward="false" selection-start-line="83" selection-start-column="31" selection-end-line="83" selection-end-column="37" />
+            <state relative-caret-position="533">
+              <caret line="62" column="19" lean-forward="false" selection-start-line="62" selection-start-column="19" selection-end-line="62" selection-end-column="19" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <marker date="1607638462974" expanded="true" signature="1093:1214" ph="INSERT INTO authors... " />
-                <marker date="1607638462974" expanded="true" signature="1112:1214" ph="INSERT INTO authors... " />
-                <marker date="1607638462974" expanded="true" signature="1274:1295" ph="SELECT * FRO... authors" />
+                <element signature="method#createTable#0;class#DBConnect#0" expanded="false" />
+                <element signature="method#getConnection#0;class#DBConnect#0" expanded="false" />
+                <marker date="1609204962769" expanded="true" signature="1359:1480" ph="INSERT INTO authors... " />
+                <marker date="1609204962769" expanded="true" signature="1378:1480" ph="INSERT INTO authors... " />
+                <marker date="1609204962769" expanded="true" signature="1540:1561" ph="SELECT * FRO... authors" />
+                <marker date="1609204962769" expanded="true" signature="2329:2493" ph="insert into patient... " />
+                <marker date="1609204962769" expanded="true" signature="2804:2825" ph="SELECT * FRO... Patient" />
+                <marker date="1609204962769" expanded="true" signature="3161:3182" ph="SELECT * FRO... Patient" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="tsconfig.json" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/tsconfig.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="210">
+              <caret line="14" column="40" lean-forward="true" selection-start-line="14" selection-start-column="40" selection-end-line="14" selection-end-column="40" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -95,44 +106,28 @@
       <file leaf-file-name="CancerBiobank.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/controller/CancerBiobank.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="339">
-              <caret line="25" column="53" lean-forward="true" selection-start-line="25" selection-start-column="53" selection-end-line="25" selection-end-column="53" />
+            <state relative-caret-position="111">
+              <caret line="25" column="3" lean-forward="true" selection-start-line="25" selection-start-column="3" selection-end-line="25" selection-end-column="3" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#256#257#0" expanded="true" />
-                <element signature="e#299#300#0" expanded="true" />
+                <element signature="e#352#353#0" expanded="true" />
+                <element signature="e#395#396#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="PrintStream.java" pinned="false" current-in-tab="false">
-        <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_144.jdk/Contents/Home/src.zip!/java/io/PrintStream.java">
+      <file leaf-file-name="Login.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/gui/Login.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
-              <caret line="803" column="0" lean-forward="false" selection-start-line="803" selection-start-column="0" selection-end-line="804" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Connection.java" pinned="false" current-in-tab="false">
-        <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_144.jdk/Contents/Home/src.zip!/java/sql/Connection.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="226">
-              <caret line="193" column="28" lean-forward="false" selection-start-line="193" selection-start-column="28" selection-end-line="193" selection-end-column="28" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Class.java" pinned="false" current-in-tab="false">
-        <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_144.jdk/Contents/Home/src.zip!/java/lang/Class.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="364">
-              <caret line="228" column="4" lean-forward="false" selection-start-line="228" selection-start-column="4" selection-end-line="228" selection-end-column="4" />
+            <state relative-caret-position="1956">
+              <caret line="141" column="5" lean-forward="true" selection-start-line="141" selection-start-column="5" selection-end-line="141" selection-end-column="5" />
               <folding>
-                <element signature="docComment;method#forName#0;class#Class#0" expanded="false" />
+                <element signature="imports" expanded="true" />
+                <element signature="e#640#641#0" expanded="true" />
+                <element signature="e#675#676#0" expanded="true" />
+                <element signature="e#2900#3032#0" expanded="true" />
+                <element signature="e#3031#3032#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -141,10 +136,41 @@
       <file leaf-file-name="cancerBiobank.sql" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/sql/cancerBiobank.sql">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="330">
-              <caret line="22" column="0" lean-forward="false" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+            <state relative-caret-position="240">
+              <caret line="16" column="21" lean-forward="false" selection-start-line="16" selection-start-column="21" selection-end-line="16" selection-end-column="21" />
               <folding />
             </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="PatientGui.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/gui/PatientGui.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="220">
+              <caret line="33" column="13" lean-forward="true" selection-start-line="33" selection-start-column="13" selection-end-line="33" selection-end-column="13" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#1828#1960#0" expanded="true" />
+                <element signature="e#1959#1960#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="JFrame.java" pinned="false" current-in-tab="false">
+        <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_144.jdk/Contents/Home/src.zip!/javax/swing/JFrame.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="898">
+              <caret line="392" column="9" lean-forward="true" selection-start-line="392" selection-start-column="9" selection-end-line="392" selection-end-column="9" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="PatientGui.form" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/gui/PatientGui.form">
+          <provider selected="true" editor-type-id="ui-designer">
+            <state />
           </provider>
         </entry>
       </file>
@@ -161,7 +187,11 @@
     <findStrings>
       <find>jdbc</find>
       <find>driverma</find>
+      <find>close</find>
       <find>FileReader</find>
+      <find>showframe</find>
+      <find>compiler</find>
+      <find>handleLoginFailed</find>
     </findStrings>
     <replaceStrings>
       <replace />
@@ -184,12 +214,15 @@
         <option value="$PROJECT_DIR$/src/gui/login.form" />
         <option value="$PROJECT_DIR$/src/DBConnect.java" />
         <option value="$PROJECT_DIR$/src/gui/loginDelegate.java" />
-        <option value="$PROJECT_DIR$/src/delegates/loginDelegate.java" />
         <option value="$PROJECT_DIR$/src/gui/login.java" />
-        <option value="$PROJECT_DIR$/src/controller/CancerBiobank.java" />
-        <option value="$PROJECT_DIR$/src/database/DBConnect.java" />
-        <option value="$PROJECT_DIR$/src/gui/Login.java" />
         <option value="$PROJECT_DIR$/src/gui/Login.form" />
+        <option value="$PROJECT_DIR$/src/gui/Login.java" />
+        <option value="$PROJECT_DIR$/src/delegates/loginDelegate.java" />
+        <option value="$PROJECT_DIR$/tsconfig.json" />
+        <option value="$PROJECT_DIR$/src/database/DBConnect.java" />
+        <option value="$PROJECT_DIR$/src/gui/PatientGui.form" />
+        <option value="$PROJECT_DIR$/src/controller/CancerBiobank.java" />
+        <option value="$PROJECT_DIR$/src/gui/PatientGui.java" />
       </list>
     </option>
   </component>
@@ -210,10 +243,30 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
-    <option name="x" value="143" />
+    <option name="x" value="359" />
     <option name="y" value="23" />
-    <option name="width" value="1297" />
+    <option name="width" value="1081" />
     <option name="height" value="877" />
+  </component>
+  <component name="ProjectInspectionProfilesVisibleTreeState">
+    <entry key="Project Default">
+      <profile-state>
+        <expanded-state>
+          <State>
+            <id />
+          </State>
+          <State>
+            <id>Android &gt; Lint &gt; Usability &gt; Icons</id>
+          </State>
+          <State>
+            <id>UI Form Problems</id>
+          </State>
+          <State>
+            <id>XPath</id>
+          </State>
+        </expanded-state>
+      </profile-state>
+    </entry>
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="1" id="Add" />
@@ -269,19 +322,6 @@
             </path>
             <path>
               <item name="cancerBiobank304" type="b2602c69:ProjectViewProjectNode" />
-              <item name="cancerBiobank304" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="gui" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="cancerBiobank304" type="b2602c69:ProjectViewProjectNode" />
-              <item name="cancerBiobank304" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="gui" type="462c0819:PsiDirectoryNode" />
-              <item name="Login" type="e9f4de52:FormNode" />
-            </path>
-            <path>
-              <item name="cancerBiobank304" type="b2602c69:ProjectViewProjectNode" />
               <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
             </path>
           </expand>
@@ -292,7 +332,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="nodejs_interpreter_path" value="/usr/local/bin/node" />
-    <property name="settings.editor.selected.configurable" value="osmorc.ide.settings" />
+    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="project.structure.last.edited" value="Libraries" />
@@ -457,19 +497,28 @@
       <workItem from="1603830556862" duration="18005000" />
       <workItem from="1605831117640" duration="401000" />
       <workItem from="1606177875765" duration="265000" />
-      <workItem from="1606517898547" duration="9110000" />
+      <workItem from="1606517898547" duration="30138000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="31620000" />
+    <option name="totallyTimeSpent" value="52648000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="143" y="23" width="1297" height="877" extended-state="0" />
+    <frame x="359" y="23" width="1081" height="877" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32938075" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32806325" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -477,14 +526,14 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32943293" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32806325" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32938075" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32938075" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32806325" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18565737" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.21462946" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.21782178" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32806325" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24960753" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24932493" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -496,6 +545,35 @@
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
+    <layout-to-restore>
+      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32943293" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.21782178" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24960753" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24932493" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3992095" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32938075" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32806325" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32806325" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32938075" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32806325" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25168538" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32806325" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="true" content_ui="tabs" />
+    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
@@ -504,7 +582,17 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager />
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/controller/CancerBiobank.java</url>
+          <line>38</line>
+          <properties />
+          <option name="timeStamp" value="11" />
+        </line-breakpoint>
+      </breakpoints>
+      <option name="time" value="14" />
+    </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="antWorkspaceConfiguration">
@@ -531,9 +619,14 @@
           <caret line="51" column="35" lean-forward="false" selection-start-line="51" selection-start-column="31" selection-end-line="51" selection-end-column="35" />
           <folding>
             <element signature="imports" expanded="true" />
-            <marker date="1607638462974" expanded="true" signature="1093:1214" ph="INSERT INTO authors... " />
-            <marker date="1607638462974" expanded="true" signature="1112:1214" ph="INSERT INTO authors... " />
-            <marker date="1607638462974" expanded="true" signature="1274:1295" ph="SELECT * FRO... authors" />
+            <element signature="method#createTable#0;class#DBConnect#0" expanded="false" />
+            <element signature="method#getConnection#0;class#DBConnect#0" expanded="false" />
+            <marker date="1609204962769" expanded="true" signature="1359:1480" ph="INSERT INTO authors... " />
+            <marker date="1609204962769" expanded="true" signature="1378:1480" ph="INSERT INTO authors... " />
+            <marker date="1609204962769" expanded="true" signature="1540:1561" ph="SELECT * FRO... authors" />
+            <marker date="1609204962769" expanded="true" signature="2329:2493" ph="insert into patient... " />
+            <marker date="1609204962769" expanded="true" signature="2804:2825" ph="SELECT * FRO... Patient" />
+            <marker date="1609204962769" expanded="true" signature="3161:3182" ph="SELECT * FRO... Patient" />
           </folding>
         </state>
       </provider>
@@ -576,8 +669,10 @@
           <caret line="24" column="26" lean-forward="false" selection-start-line="24" selection-start-column="26" selection-end-line="24" selection-end-column="26" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1423#1424#0" expanded="true" />
-            <element signature="e#1480#1481#0" expanded="true" />
+            <element signature="e#640#641#0" expanded="true" />
+            <element signature="e#675#676#0" expanded="true" />
+            <element signature="e#2900#3032#0" expanded="true" />
+            <element signature="e#3031#3032#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -593,9 +688,14 @@
           <caret line="51" column="35" lean-forward="false" selection-start-line="51" selection-start-column="31" selection-end-line="51" selection-end-column="35" />
           <folding>
             <element signature="imports" expanded="true" />
-            <marker date="1607638462974" expanded="true" signature="1093:1214" ph="INSERT INTO authors... " />
-            <marker date="1607638462974" expanded="true" signature="1112:1214" ph="INSERT INTO authors... " />
-            <marker date="1607638462974" expanded="true" signature="1274:1295" ph="SELECT * FRO... authors" />
+            <element signature="method#createTable#0;class#DBConnect#0" expanded="false" />
+            <element signature="method#getConnection#0;class#DBConnect#0" expanded="false" />
+            <marker date="1609204962769" expanded="true" signature="1359:1480" ph="INSERT INTO authors... " />
+            <marker date="1609204962769" expanded="true" signature="1378:1480" ph="INSERT INTO authors... " />
+            <marker date="1609204962769" expanded="true" signature="1540:1561" ph="SELECT * FRO... authors" />
+            <marker date="1609204962769" expanded="true" signature="2329:2493" ph="insert into patient... " />
+            <marker date="1609204962769" expanded="true" signature="2804:2825" ph="SELECT * FRO... Patient" />
+            <marker date="1609204962769" expanded="true" signature="3161:3182" ph="SELECT * FRO... Patient" />
           </folding>
         </state>
       </provider>
@@ -638,8 +738,10 @@
           <caret line="24" column="26" lean-forward="false" selection-start-line="24" selection-start-column="26" selection-end-line="24" selection-end-column="26" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1423#1424#0" expanded="true" />
-            <element signature="e#1480#1481#0" expanded="true" />
+            <element signature="e#640#641#0" expanded="true" />
+            <element signature="e#675#676#0" expanded="true" />
+            <element signature="e#2900#3032#0" expanded="true" />
+            <element signature="e#3031#3032#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -679,9 +781,14 @@
           <caret line="51" column="35" lean-forward="false" selection-start-line="51" selection-start-column="31" selection-end-line="51" selection-end-column="35" />
           <folding>
             <element signature="imports" expanded="true" />
-            <marker date="1607638462974" expanded="true" signature="1093:1214" ph="INSERT INTO authors... " />
-            <marker date="1607638462974" expanded="true" signature="1112:1214" ph="INSERT INTO authors... " />
-            <marker date="1607638462974" expanded="true" signature="1274:1295" ph="SELECT * FRO... authors" />
+            <element signature="method#createTable#0;class#DBConnect#0" expanded="false" />
+            <element signature="method#getConnection#0;class#DBConnect#0" expanded="false" />
+            <marker date="1609204962769" expanded="true" signature="1359:1480" ph="INSERT INTO authors... " />
+            <marker date="1609204962769" expanded="true" signature="1378:1480" ph="INSERT INTO authors... " />
+            <marker date="1609204962769" expanded="true" signature="1540:1561" ph="SELECT * FRO... authors" />
+            <marker date="1609204962769" expanded="true" signature="2329:2493" ph="insert into patient... " />
+            <marker date="1609204962769" expanded="true" signature="2804:2825" ph="SELECT * FRO... Patient" />
+            <marker date="1609204962769" expanded="true" signature="3161:3182" ph="SELECT * FRO... Patient" />
           </folding>
         </state>
       </provider>
@@ -718,14 +825,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/sql/cancerBiobank.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="22" column="0" lean-forward="false" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_144.jdk/Contents/Home/src.zip!/java/lang/Class.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="364">
@@ -733,14 +832,6 @@
           <folding>
             <element signature="docComment;method#forName#0;class#Class#0" expanded="false" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_144.jdk/Contents/Home/src.zip!/java/sql/Connection.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="226">
-          <caret line="193" column="28" lean-forward="false" selection-start-line="193" selection-start-column="28" selection-end-line="193" selection-end-column="28" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -760,35 +851,36 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/controller/CancerBiobank.java">
+    <entry file="jar://$PROJECT_DIR$/mysql-connector-java-8.0.22/mysql-connector-java-8.0.22.jar!/com/mysql/cj/util/StringUtils.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="339">
-          <caret line="25" column="53" lean-forward="true" selection-start-line="25" selection-start-column="53" selection-end-line="25" selection-end-column="53" />
+        <state relative-caret-position="143">
+          <caret line="804" column="0" lean-forward="false" selection-start-line="804" selection-start-column="0" selection-end-line="804" selection-end-column="0" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#256#257#0" expanded="true" />
-            <element signature="e#299#300#0" expanded="true" />
+            <element signature="e#34934#34935#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/database/DBConnect.java">
+    <entry file="jar://$PROJECT_DIR$/mysql-connector-java-8.0.22/mysql-connector-java-8.0.22.jar!/com/mysql/cj/conf/ConnectionUrlParser.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="359">
-          <caret line="83" column="37" lean-forward="false" selection-start-line="83" selection-start-column="31" selection-end-line="83" selection-end-column="37" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <marker date="1607638462974" expanded="true" signature="1093:1214" ph="INSERT INTO authors... " />
-            <marker date="1607638462974" expanded="true" signature="1112:1214" ph="INSERT INTO authors... " />
-            <marker date="1607638462974" expanded="true" signature="1274:1295" ph="SELECT * FRO... authors" />
-          </folding>
+        <state relative-caret-position="127">
+          <caret line="71" column="0" lean-forward="false" selection-start-line="71" selection-start-column="0" selection-end-line="71" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/delegates/loginDelegate.java">
+    <entry file="jar://$PROJECT_DIR$/mysql-connector-java-8.0.22/mysql-connector-java-8.0.22.jar!/com/mysql/cj/conf/ConnectionUrl.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" column="17" lean-forward="false" selection-start-line="12" selection-start-column="17" selection-end-line="12" selection-end-column="17" />
+        <state relative-caret-position="143">
+          <caret line="91" column="0" lean-forward="false" selection-start-line="91" selection-start-column="0" selection-end-line="91" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/mysql-connector-java-8.0.22/mysql-connector-java-8.0.22.jar!/com/mysql/cj/jdbc/NonRegisteringDriver.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="68" column="0" lean-forward="false" selection-start-line="68" selection-start-column="0" selection-end-line="68" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -798,14 +890,152 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/gui/Login.java">
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_144.jdk/Contents/Home/src.zip!/java/awt/Window.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="275">
-          <caret line="37" column="43" lean-forward="true" selection-start-line="37" selection-start-column="43" selection-end-line="37" selection-end-column="43" />
+        <state relative-caret-position="0">
+          <caret line="916" column="37" lean-forward="false" selection-start-line="916" selection-start-column="37" selection-end-line="916" selection-end-column="37" />
+          <folding>
+            <element signature="e#35456#35457#0" expanded="false" />
+            <element signature="e#35491#35492#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_144.jdk/Contents/Home/src.zip!/java/awt/GridBagConstraints.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="244">
+          <caret line="489" column="18" lean-forward="false" selection-start-line="489" selection-start-column="18" selection-end-line="489" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_144.jdk/Contents/Home/src.zip!/java/awt/Component.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="351">
+          <caret line="2259" column="52" lean-forward="false" selection-start-line="2259" selection-start-column="52" selection-end-line="2259" selection-end-column="52" />
+          <folding>
+            <element signature="e#77478#77479#0" expanded="false" />
+            <element signature="e#77522#77523#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_144.jdk/Contents/Home/src.zip!/javax/swing/AbstractButton.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="1937" column="31" lean-forward="false" selection-start-line="1937" selection-start-column="31" selection-end-line="1937" selection-end-column="31" />
+          <folding>
+            <element signature="e#68197#68198#0" expanded="true" />
+            <element signature="e#68254#68255#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_144.jdk/Contents/Home/src.zip!/javax/swing/JTextField.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="206">
+          <caret line="425" column="32" lean-forward="false" selection-start-line="425" selection-start-column="32" selection-end-line="425" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_144.jdk/Contents/Home/src.zip!/java/sql/Connection.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="154">
+          <caret line="103" column="14" lean-forward="false" selection-start-line="103" selection-start-column="14" selection-end-line="103" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sql/cancerBiobank.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="16" column="21" lean-forward="false" selection-start-line="16" selection-start-column="21" selection-end-line="16" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tsconfig.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="14" column="40" lean-forward="true" selection-start-line="14" selection-start-column="40" selection-end-line="14" selection-end-column="40" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/delegates/loginDelegate.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="17" column="0" lean-forward="true" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/gui/PatientGui.form">
+      <provider selected="true" editor-type-id="ui-designer">
+        <state />
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_144.jdk/Contents/Home/src.zip!/javax/swing/JFrame.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="898">
+          <caret line="392" column="9" lean-forward="true" selection-start-line="392" selection-start-column="9" selection-end-line="392" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/database/DBConnect.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="533">
+          <caret line="62" column="19" lean-forward="false" selection-start-line="62" selection-start-column="19" selection-end-line="62" selection-end-column="19" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1423#1424#0" expanded="true" />
-            <element signature="e#1480#1481#0" expanded="true" />
+            <element signature="method#createTable#0;class#DBConnect#0" expanded="false" />
+            <element signature="method#getConnection#0;class#DBConnect#0" expanded="false" />
+            <marker date="1609204962769" expanded="true" signature="1359:1480" ph="INSERT INTO authors... " />
+            <marker date="1609204962769" expanded="true" signature="1378:1480" ph="INSERT INTO authors... " />
+            <marker date="1609204962769" expanded="true" signature="1540:1561" ph="SELECT * FRO... authors" />
+            <marker date="1609204962769" expanded="true" signature="2329:2493" ph="insert into patient... " />
+            <marker date="1609204962769" expanded="true" signature="2804:2825" ph="SELECT * FRO... Patient" />
+            <marker date="1609204962769" expanded="true" signature="3161:3182" ph="SELECT * FRO... Patient" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/controller/CancerBiobank.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="111">
+          <caret line="25" column="3" lean-forward="true" selection-start-line="25" selection-start-column="3" selection-end-line="25" selection-end-column="3" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#352#353#0" expanded="true" />
+            <element signature="e#395#396#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/gui/Login.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1956">
+          <caret line="141" column="5" lean-forward="true" selection-start-line="141" selection-start-column="5" selection-end-line="141" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#640#641#0" expanded="true" />
+            <element signature="e#675#676#0" expanded="true" />
+            <element signature="e#2900#3032#0" expanded="true" />
+            <element signature="e#3031#3032#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/gui/PatientGui.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="33" column="13" lean-forward="true" selection-start-line="33" selection-start-column="13" selection-end-line="33" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1828#1960#0" expanded="true" />
+            <element signature="e#1959#1960#0" expanded="true" />
           </folding>
         </state>
       </provider>
