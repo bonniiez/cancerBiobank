@@ -12,14 +12,14 @@ public class DBConnect {
 
     private Connection connection = null;
     private String mySqlDriver = "com.mysql.cj.jdbc.Driver";
-    private String mySqlUrl = "jdbc:mysql://localhost:3306/cancerBiobank?useUnicode=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC";
+    private String mySqlUrl = "jdbc:mysql://localhost:3306/cancerBiobank?useUnicode=" +
+            "true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC";
 
 
     public DBConnect(){
         try{
 //            getConnection();
-            //load the JDBC driver
-            // note that the path could change for new drivers
+            //load the JDBC driver, note that the path could change for new drivers
 
             Class.forName(mySqlDriver);
         } catch (ClassNotFoundException e) {
@@ -68,52 +68,6 @@ public class DBConnect {
 
             connection = DriverManager.getConnection(mySqlUrl, username, password);
            connection.setAutoCommit(false);
-
-           /*
-           // create a statement
-           Statement myStmt = connection.createStatement();
-
-           // execute SQL query
-            String sql = "insert into Patient values ('ID1',date_format('2017-10-02', '%Y-%m-%d'),date_format('1932-04-19', '%Y-%m-%d'), 0, 'Prostatee', date_format('2015-04-15','%Y-%m-%d'))";
-            myStmt.executeUpdate(sql);
-
-            System.out.println("Insert Complete");
-
-
-
-
-            // tester 1 and tester 2 both works
-            // execute select all statement
-            Statement selectQuery = connection.createStatement();
-            ResultSet rSet = selectQuery.executeQuery("SELECT * FROM Patient");
-            while(rSet.next()){
-                String patientID = rSet.getString("pID");
-                String cancerType = rSet.getString("CancerType");
-                System.out.print(patientID + ", " + cancerType + "\n ");
-            }
-
-
-*/
-            // tester 2
-            // select statement
-            String query = "SELECT * FROM Patient ";
-            // create the preparedstatement and add the criteria
-            PreparedStatement ps = connection.prepareStatement(query);
-            // process the results
-            ResultSet rs = ps.executeQuery();
-            while ( rs.next() )
-            {
-
-                String patientID =  rs.getString("pID") ;
-                String cancerType  =  rs.getString("CancerType") ;
-                System.out.print(patientID + ", " + cancerType + "\n ");
-
-            }
-            rs.close();
-            ps.close();
-
-
-
 
             System.out.println("\n Connected to mySql");
 

@@ -6,6 +6,7 @@ import gui.Login;
 import database.DBConnect;
 import gui.PatientGui;
 
+import java.awt.*;
 import java.sql.SQLException;
 
 public class CancerBiobank implements loginDelegate {
@@ -37,8 +38,7 @@ public class CancerBiobank implements loginDelegate {
 
      if (isConnectedStatus){
          patientGui = new PatientGui();
-         patientGui.setVisible(true);
-//         patientGui.showFrame();
+         patientGui.showFrame();
      } else {
          loginGui.handleLoginFailed();
 
