@@ -23,12 +23,14 @@ public class PatientGui extends JFrame implements ActionListener{
     private  JPanel patientFormMainPanel;
     private JPanel patientTablePanel;
     private JTable patientTable;
+    private JButton deleteButton;
     String columnNames[] = {"pID", "MetastaticDx", "BirthDate","Sex","CancerType","DateDx"};
 
 
     public PatientGui() {
         super("Patient panel");
         createConnection();
+
         this.setContentPane(patientFormMainPanel);
         this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 
@@ -38,10 +40,19 @@ public class PatientGui extends JFrame implements ActionListener{
         JScrollPane scrollPane = new JScrollPane(patientTable);
         patientTablePanel.add(scrollPane);
 
+        addWindowListener(new WindowAdapter() {
+            public void windowClosing(WindowEvent e) {
+                try {
+                    System.out.println("insert new patient connection closed ");
+                    connection.close();
+                } catch (SQLException e1) {
+                    e1.printStackTrace();
+                }
+            }
+        });
 
 
 
-        this.pack();
 
 
         searchButton.addActionListener(new ActionListener() {
@@ -66,6 +77,7 @@ public class PatientGui extends JFrame implements ActionListener{
                          pst = connection.prepareStatement(query);
                         rSet = pst.executeQuery();
 //                        rSet = queryStmt.executeQuery("SELECT * FROM Patient WHERE pID='"+pID+"' ");
+
 
 
                     }
@@ -106,23 +118,46 @@ public class PatientGui extends JFrame implements ActionListener{
                         model.addRow(new Object[]{patientID, metastaticDx, bdate,sex,cancerType,dateDx});
                     }
                     */
-                    pst.close();
+
+                    rSet.close();
+                    pst.close(); // close statement to prevent memory leaks
                 }catch (SQLException err){
                     System.out.print("[EXCEPTION]"+ err.getMessage());
                 }
-                setVisible(true);
-
-
-                // get pID from text field
-                // call DAO and get employees for the pID
-                // if pID doesnt exist, then get all employees
-                // print out employees
+//                setVisible(true);
             }
         });
 
         insertNewPatientButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
+                InsertNewPatient insertPat = new InsertNewPatient();
+                insertPat.showFrame();
+
+            }
+        });
+        deleteButton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                try {
+                    int row = patientTable.getSelectedRow();
+                    String pID = patientTable.getValueAt(row,0).toString();
+//                    pID.substring(2);
+                    String sqlc = "DELETE FROM PATIENT WHERE pID=?";
+                    PreparedStatement ps = connection.prepareStatement(sqlc);
+                    ps.setString(1, pID);
+                    ps.executeUpdate();
+                    ps.close();
+
+
+
+                } catch (SQLException e1) {
+
+                    JOptionPane.showMessageDialog(new JFrame(),  e1.getMessage());
+
+                    e1.printStackTrace();
+                }
+
 
             }
         });
