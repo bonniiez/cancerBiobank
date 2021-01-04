@@ -72,4 +72,10 @@ insert into Treatment values('Abiraterone', 'ID1', date_format('2017-05-02', '%Y
 insert into Treatment values('Tamoxifen', 'ID2', date_format('2002-09-02', '%Y-%m-%d'), 1, 'Clinical', date_format('2007-11-12', '%Y-%m-%d'));
 insert into Treatment values('Avelumab', 'ID2',date_format('2000-05-02', '%Y-%m-%d'), 1, 'Chemical', date_format('2017-05-02', '%Y-%m-%d'));
 insert into Treatment values('Avelumab', 'ID2', date_format('2007-07-19', '%Y-%m-%d'), 1, '', date_format('2007-09-02', '%Y-%m-%d'));
+insert into Treatment values('Abiraterone', 'ID3', date_format('2003-12-12', '%Y-%m-%d'), 1, 'Chemical', date_format('2017-05-23', '%Y-%m-%d'));
+insert into Treatment values('Ipatasertib', 'ID3', date_format('2014-11-15', '%Y-%m-%d'), 0, '', date_format('2011-05-23', '%Y-%m-%d'));
+insert into Treatment values('Abiraterone', 'ID4', date_format('2019-09-02', '%Y-%m-%d'), 1, 'Chemical',date_format('2011-09-02', '%Y-%m-%d'));
+insert into Treatment values('Ipatasertib', 'ID4', date_format('2011-04-02', '%Y-%m-%d'), 1, 'Clinical', date_format('2007-11-02', '%Y-%m-%d'));
+insert into Treatment values('Avelumab', 'ID5', date_format('2017-05-02', '%Y-%m-%d'), 0, '', date_format('2017-05-23', '%Y-%m-%d'));
+
 

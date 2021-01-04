@@ -4,6 +4,7 @@ import database.DBConnect;
 import net.proteanit.sql.DbUtils;
 
 import javax.swing.*;
+import javax.swing.border.Border;
 import javax.swing.border.LineBorder;
 import java.awt.*;
 import java.awt.event.ActionEvent;
@@ -52,12 +53,18 @@ public class TreatmentTherapy extends JFrame{
         treatmentPanel.add(treatmentRefreshButton);
         treatmentPanel.add(treatmentTable);
 
+        JScrollPane scrollPaneTreatment = new JScrollPane(treatmentTable);
+        treatmentPanel.add(scrollPaneTreatment);
+
 
         therapyPanel = new JPanel();
         therapyPanel.setBorder(new LineBorder(Color.black, 1));
         therapyPanel.add(therapyLabel);
         therapyPanel.add(therapyRefreshButton);
         therapyPanel.add(therapyTable);
+
+        JScrollPane scrollPaneTherapy = new JScrollPane(therapyTable);
+        therapyPanel.add(scrollPaneTherapy);
 
 
         JPanel topPanel = new JPanel();
@@ -70,8 +77,7 @@ public class TreatmentTherapy extends JFrame{
         joinPanel.setLayout(new BoxLayout(joinPanel, BoxLayout.Y_AXIS));
         String progressionTypes[] = new String[]{"","Clinical", "Chemical"};
         comboBox1 = new JComboBox(progressionTypes);
-//        comboBox1.setPreferredSize(new Dimension(10,30));
-//        comboBox1.setAlignmentX(Component.RIGHT_ALIGNMENT);
+;
 
         joinSearchBar = new JPanel();
         joinSearchBar.setLayout(new BoxLayout(joinSearchBar, BoxLayout.X_AXIS));
@@ -82,6 +88,10 @@ public class TreatmentTherapy extends JFrame{
         joinPanel.add(joinTreatmentTherapyLabel);
         joinPanel.add(joinSearchBar);
         joinPanel.add(joinTreatmentTherapyTable, BorderLayout.PAGE_END);
+
+        JScrollPane scrollPanelJoin = new JScrollPane(joinTreatmentTherapyTable);
+
+        joinPanel.add(scrollPanelJoin);
 
         mainPanel.add(topPanel, BorderLayout.NORTH);
         mainPanel.add(joinPanel, BorderLayout.SOUTH);
@@ -141,11 +151,6 @@ public class TreatmentTherapy extends JFrame{
                     joinTreatmentTherapyTable.setModel(DbUtils.resultSetToTableModel(rs));
                     pack();
 
-                    System.out.println("selectedPT clicked: "+ selectedPT);
-
-
-
-
                     ps.close();
                 } catch (SQLException e1) {
                     e1.printStackTrace();
@@ -163,7 +168,6 @@ public class TreatmentTherapy extends JFrame{
 
                 JComboBox cb = (JComboBox)e.getSource();
                  selectedPT = (String)cb.getSelectedItem();
-                System.out.println("pT in actionlistener: " + selectedPT);
             }
         });
     }

@@ -2,24 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f92b64e8-7ac2-48d7-b296-d4a0320cbb75" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/cancerBiobank304/controller/CancerBiobank.class" afterPath="$PROJECT_DIR$/out/production/cancerBiobank304/controller/CancerBiobank.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/cancerBiobank304/database/DBConnect.class" afterPath="$PROJECT_DIR$/out/production/cancerBiobank304/database/DBConnect.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/cancerBiobank304/gui/InsertNewPatient$1.class" afterPath="$PROJECT_DIR$/out/production/cancerBiobank304/gui/InsertNewPatient$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/cancerBiobank304/gui/InsertNewPatient$2.class" afterPath="$PROJECT_DIR$/out/production/cancerBiobank304/gui/InsertNewPatient$2.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/cancerBiobank304/gui/InsertNewPatient.class" afterPath="$PROJECT_DIR$/out/production/cancerBiobank304/gui/InsertNewPatient.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/cancerBiobank304/gui/PatientGui$1.class" afterPath="$PROJECT_DIR$/out/production/cancerBiobank304/gui/PatientGui$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/cancerBiobank304/gui/PatientGui$2.class" afterPath="$PROJECT_DIR$/out/production/cancerBiobank304/gui/PatientGui$2.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/cancerBiobank304/gui/PatientGui$3.class" afterPath="$PROJECT_DIR$/out/production/cancerBiobank304/gui/PatientGui$3.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/cancerBiobank304/gui/PatientGui$4.class" afterPath="$PROJECT_DIR$/out/production/cancerBiobank304/gui/PatientGui$4.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/cancerBiobank304/gui/PatientGui$5.class" afterPath="$PROJECT_DIR$/out/production/cancerBiobank304/gui/PatientGui$5.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/cancerBiobank304/gui/PatientGui.class" afterPath="$PROJECT_DIR$/out/production/cancerBiobank304/gui/PatientGui.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/cancerBiobank304/sql/cancerBiobank.sql" afterPath="$PROJECT_DIR$/out/production/cancerBiobank304/sql/cancerBiobank.sql" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/controller/CancerBiobank.java" afterPath="$PROJECT_DIR$/src/controller/CancerBiobank.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/database/DBConnect.java" afterPath="$PROJECT_DIR$/src/database/DBConnect.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/gui/InsertNewPatient.java" afterPath="$PROJECT_DIR$/src/gui/InsertNewPatient.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/gui/PatientGui.form" afterPath="$PROJECT_DIR$/src/gui/PatientGui.form" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/gui/PatientGui.java" afterPath="$PROJECT_DIR$/src/gui/PatientGui.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/gui/TreatmentTherapy.java" afterPath="$PROJECT_DIR$/src/gui/TreatmentTherapy.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/sql/cancerBiobank.sql" afterPath="$PROJECT_DIR$/src/sql/cancerBiobank.sql" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -65,6 +49,16 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="cancerBiobank304.iml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/cancerBiobank304.iml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="150">
+              <caret line="10" column="14" lean-forward="false" selection-start-line="10" selection-start-column="14" selection-end-line="10" selection-end-column="14" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="DBConnect.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/database/DBConnect.java">
           <provider selected="true" editor-type-id="text-editor">
@@ -94,9 +88,10 @@
       <file leaf-file-name="PatientGui.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/gui/PatientGui.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="7" column="30" lean-forward="false" selection-start-line="7" selection-start-column="30" selection-end-line="7" selection-end-column="30" />
+            <state relative-caret-position="96">
+              <caret line="40" column="7" lean-forward="false" selection-start-line="40" selection-start-column="7" selection-end-line="41" selection-end-column="42" />
               <folding>
+                <element signature="imports" expanded="true" />
                 <element signature="e#1476#1823#0" expanded="true" />
                 <element signature="e#1822#1823#0" expanded="true" />
                 <marker date="1609464634298" expanded="true" signature="2217:2238" ph="SELECT * FRO... Patient" />
@@ -123,29 +118,29 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="TreatmentTherapy.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="TreatmentTherapy.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/gui/TreatmentTherapy.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="310">
-              <caret line="86" column="53" lean-forward="true" selection-start-line="86" selection-start-column="53" selection-end-line="86" selection-end-column="53" />
+            <state relative-caret-position="201">
+              <caret line="88" column="37" lean-forward="true" selection-start-line="88" selection-start-column="37" selection-end-line="88" selection-end-column="37" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <marker date="1609737960537" expanded="true" signature="3044:3067" ph="SELECT * FRO... Treatment" />
-                <marker date="1609737960537" expanded="true" signature="3686:3707" ph="SELECT * FRO... Therapy" />
-                <marker date="1609737960537" expanded="true" signature="4313:4432" ph="SELECT *\nFR... treatment" />
-                <marker date="1609737960537" expanded="true" signature="4313:4434" ph="SELECT *\nFR... treatment" />
-                <marker date="1609737960537" expanded="true" signature="4313:4521" ph="SELECT *\nFR... treatment" />
-                <marker date="1609737960537" expanded="true" signature="4462:4520" ph="SELECT *\nFR... therapy" />
+                <marker date="1609739095024" expanded="true" signature="3324:3347" ph="SELECT * FRO... Treatment" />
+                <marker date="1609739095024" expanded="true" signature="3966:3987" ph="SELECT * FRO... Therapy" />
+                <marker date="1609739095024" expanded="true" signature="4593:4712" ph="SELECT *\nFR... treatment" />
+                <marker date="1609739095024" expanded="true" signature="4593:4714" ph="SELECT *\nFR... treatment" />
+                <marker date="1609739095024" expanded="true" signature="4593:4801" ph="SELECT *\nFR... treatment" />
+                <marker date="1609739095024" expanded="true" signature="4742:4800" ph="SELECT *\nFR... therapy" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="JComponent.java" pinned="false" current-in-tab="false">
-        <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_144.jdk/Contents/Home/src.zip!/javax/swing/JComponent.java">
+      <file leaf-file-name="cancerBiobank.sql" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/sql/cancerBiobank.sql">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="155">
-              <caret line="1916" column="16" lean-forward="false" selection-start-line="1916" selection-start-column="16" selection-end-line="1916" selection-end-column="16" />
+            <state relative-caret-position="382">
+              <caret line="80" column="0" lean-forward="true" selection-start-line="80" selection-start-column="0" selection-end-line="80" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -182,6 +177,8 @@
       <find>autocommit</find>
       <find>autoc</find>
       <find>auto</find>
+      <find>selec</find>
+      <find>print</find>
     </findStrings>
     <replaceStrings>
       <replace />
@@ -212,11 +209,11 @@
         <option value="$PROJECT_DIR$/src/controller/CancerBiobank.java" />
         <option value="$PROJECT_DIR$/src/gui/PatientGui.form" />
         <option value="$PROJECT_DIR$/src/gui/PatientGui.java" />
-        <option value="$PROJECT_DIR$/src/sql/cancerBiobank.sql" />
         <option value="$PROJECT_DIR$/src/database/DBConnect.java" />
         <option value="$PROJECT_DIR$/src/gui/InsertNewPatient.java" />
         <option value="$PROJECT_DIR$/src/gui/TreatmentTherapy.form" />
         <option value="$PROJECT_DIR$/src/gui/TreatmentTherapy.java" />
+        <option value="$PROJECT_DIR$/src/sql/cancerBiobank.sql" />
       </list>
     </option>
   </component>
@@ -236,9 +233,10 @@
     <servers />
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds">
+    <option name="x" value="263" />
     <option name="y" value="23" />
-    <option name="width" value="973" />
+    <option name="width" value="1177" />
     <option name="height" value="877" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
@@ -518,12 +516,12 @@
       <workItem from="1605831117640" duration="401000" />
       <workItem from="1606177875765" duration="265000" />
       <workItem from="1606517898547" duration="43175000" />
-      <workItem from="1609223848100" duration="42604000" />
+      <workItem from="1609223848100" duration="43366000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="108289000" />
+    <option name="totallyTimeSpent" value="109051000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -535,7 +533,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1440" height="877" extended-state="6" />
+    <frame x="263" y="23" width="1177" height="877" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -551,7 +549,7 @@
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32806325" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1502146" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18502203" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.21782178" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32806325" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24960753" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -720,14 +718,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/cancerBiobank304.iml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="14" lean-forward="false" selection-start-line="10" selection-start-column="14" selection-end-line="10" selection-end-column="14" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$PROJECT_DIR$/mysql-connector-java-8.0.22/mysql-connector-java-8.0.22.jar!/com/mysql/cj/util/StringUtils.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="143">
@@ -882,23 +872,6 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/gui/PatientGui.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="30" lean-forward="false" selection-start-line="7" selection-start-column="30" selection-end-line="7" selection-end-column="30" />
-          <folding>
-            <element signature="e#1476#1823#0" expanded="true" />
-            <element signature="e#1822#1823#0" expanded="true" />
-            <marker date="1609464634298" expanded="true" signature="2217:2238" ph="SELECT * FRO... Patient" />
-            <marker date="1609464634298" expanded="true" signature="2510:2551" ph="SELECT * FRO... Patient" />
-            <marker date="1609464634298" expanded="true" signature="2510:2552" ph="SELECT * FRO... Patient" />
-            <marker date="1609464634298" expanded="true" signature="2730:2771" ph="SELECT * FRO... Patient" />
-            <marker date="1609464634298" expanded="true" signature="5502:5533" ph="DELETE FROM " />
-            <marker date="1609464634298" expanded="true" signature="7243:7264" ph="SELECT * FRO... Patient" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/mysql-connector-java-8.0.22/src/main/core-api/java/com/mysql/cj/conf/PropertyKey.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="162">
@@ -953,14 +926,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/sql/cancerBiobank.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="122">
-          <caret line="55" column="0" lean-forward="true" selection-start-line="55" selection-start-column="0" selection-end-line="55" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_144.jdk/Contents/Home/src.zip!/javax/swing/JComboBox.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="222">
@@ -1002,9 +967,22 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/gui/TreatmentTherapy.form">
-      <provider selected="true" editor-type-id="ui-designer">
-        <state />
+    <entry file="file://$PROJECT_DIR$/src/gui/PatientGui.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="96">
+          <caret line="40" column="7" lean-forward="false" selection-start-line="40" selection-start-column="7" selection-end-line="41" selection-end-column="42" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1476#1823#0" expanded="true" />
+            <element signature="e#1822#1823#0" expanded="true" />
+            <marker date="1609464634298" expanded="true" signature="2217:2238" ph="SELECT * FRO... Patient" />
+            <marker date="1609464634298" expanded="true" signature="2510:2551" ph="SELECT * FRO... Patient" />
+            <marker date="1609464634298" expanded="true" signature="2510:2552" ph="SELECT * FRO... Patient" />
+            <marker date="1609464634298" expanded="true" signature="2730:2771" ph="SELECT * FRO... Patient" />
+            <marker date="1609464634298" expanded="true" signature="5502:5533" ph="DELETE FROM " />
+            <marker date="1609464634298" expanded="true" signature="7243:7264" ph="SELECT * FRO... Patient" />
+          </folding>
+        </state>
       </provider>
     </entry>
     <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_144.jdk/Contents/Home/src.zip!/javax/swing/JComponent.java">
@@ -1015,19 +993,40 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/gui/TreatmentTherapy.form">
+      <provider selected="true" editor-type-id="ui-designer">
+        <state />
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/gui/TreatmentTherapy.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="310">
-          <caret line="86" column="53" lean-forward="true" selection-start-line="86" selection-start-column="53" selection-end-line="86" selection-end-column="53" />
+        <state relative-caret-position="201">
+          <caret line="88" column="37" lean-forward="true" selection-start-line="88" selection-start-column="37" selection-end-line="88" selection-end-column="37" />
           <folding>
             <element signature="imports" expanded="true" />
-            <marker date="1609737960537" expanded="true" signature="3044:3067" ph="SELECT * FRO... Treatment" />
-            <marker date="1609737960537" expanded="true" signature="3686:3707" ph="SELECT * FRO... Therapy" />
-            <marker date="1609737960537" expanded="true" signature="4313:4432" ph="SELECT *\nFR... treatment" />
-            <marker date="1609737960537" expanded="true" signature="4313:4434" ph="SELECT *\nFR... treatment" />
-            <marker date="1609737960537" expanded="true" signature="4313:4521" ph="SELECT *\nFR... treatment" />
-            <marker date="1609737960537" expanded="true" signature="4462:4520" ph="SELECT *\nFR... therapy" />
+            <marker date="1609739095024" expanded="true" signature="3324:3347" ph="SELECT * FRO... Treatment" />
+            <marker date="1609739095024" expanded="true" signature="3966:3987" ph="SELECT * FRO... Therapy" />
+            <marker date="1609739095024" expanded="true" signature="4593:4712" ph="SELECT *\nFR... treatment" />
+            <marker date="1609739095024" expanded="true" signature="4593:4714" ph="SELECT *\nFR... treatment" />
+            <marker date="1609739095024" expanded="true" signature="4593:4801" ph="SELECT *\nFR... treatment" />
+            <marker date="1609739095024" expanded="true" signature="4742:4800" ph="SELECT *\nFR... therapy" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cancerBiobank304.iml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="14" lean-forward="false" selection-start-line="10" selection-start-column="14" selection-end-line="10" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sql/cancerBiobank.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="382">
+          <caret line="80" column="0" lean-forward="true" selection-start-line="80" selection-start-column="0" selection-end-line="80" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
