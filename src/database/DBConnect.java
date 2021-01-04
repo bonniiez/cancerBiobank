@@ -14,6 +14,7 @@ public class DBConnect {
     private String mySqlDriver = "com.mysql.cj.jdbc.Driver";
     private String mySqlUrl = "jdbc:mysql://localhost:3306/cancerBiobank?useUnicode=" +
             "true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC";
+    private String pathToSQL = "src/sql/cancerBiobank.sql";
 
 
     public DBConnect(){
@@ -31,35 +32,6 @@ public class DBConnect {
 
 
 
-    // test create table
-    public static void createTable() throws Exception{
-        String pathToSQL = "src/sql/cancerBiobank.sql";
-
-        try{
-            Connection connect = getConnection();
-
-            // execute select all statement
-            Statement selectQuery = connect.createStatement();
-
-            // execute SQL statements
-            executeFile(connect, new File(pathToSQL));
-
-
-            //insert statement
-//            selectQuery.executeUpdate("INSERT INTO authors VALUES" + "('409-56-9203', 'John', 'Doe',\n" + "'415 234-2345', '9323 Doe St.', 'Dou', 'CA', '25123')");
-
-            ResultSet rSet = selectQuery.executeQuery("SELECT * FROM authors");
-            while(rSet.next()){
-                String lname = rSet.getString("au_lname");
-                String fname = rSet.getString("au_fname");
-                System.out.print(lname + ", " + fname + "\n ");
-            }
-
-        }catch(Exception e){
-            e.printStackTrace();
-        }
-    }
-
     public boolean login(String username, String password){
         try{
             if (connection != null){
@@ -71,10 +43,25 @@ public class DBConnect {
 
             System.out.println("\n Connected to mySql");
 
+
+            executeFile(connection, new File(pathToSQL));
+
+            Statement selectQuery = connection.createStatement();
+            ResultSet rSet = selectQuery.executeQuery("SELECT * FROM patient");
+            while(rSet.next()){
+                String lname = rSet.getString("pID");
+                String fname = rSet.getString("MetastaticDx");
+                System.out.print(lname + ", " + fname + "\n ");
+            }
+
+
             return true;
 
         }catch (SQLException e){
             System.out.print(EXCEPTION_TAG);
+            return false;
+        } catch (IOException e) {
+            e.printStackTrace();
             return false;
         }
     }
@@ -146,6 +133,8 @@ public class DBConnect {
                     failureCount++;
                 }
             }
+            connection.commit();
+
 
             System.out.printf("%d statements executed, %d exceptions from file %s.\n", statementCount,failureCount, fileName);
         } catch (SQLException e) {

@@ -39,6 +39,7 @@
             </constraints>
             <properties>
               <text value=""/>
+              <toolTipText value="search patients via pID"/>
             </properties>
           </component>
           <component id="32c49" class="javax.swing.JButton" binding="searchButton" default-binding="true">
@@ -87,17 +88,21 @@
         <children>
           <component id="4c811" class="javax.swing.JButton" binding="deleteButton">
             <constraints>
-              <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+              <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="4" fill="0" indent="0" use-parent-layout="false"/>
             </constraints>
             <properties>
+              <horizontalAlignment value="0"/>
               <text value="Delete"/>
             </properties>
           </component>
-          <hspacer id="d9366">
+          <component id="e84ca" class="javax.swing.JButton" binding="treatmentsButton" default-binding="true">
             <constraints>
-              <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+              <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
             </constraints>
-          </hspacer>
+            <properties>
+              <text value="Treatments"/>
+            </properties>
+          </component>
         </children>
       </grid>
     </children>

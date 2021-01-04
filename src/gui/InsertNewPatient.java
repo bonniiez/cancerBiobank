@@ -39,6 +39,7 @@ public class InsertNewPatient extends JFrame{
             public void windowClosing(WindowEvent e) {
                 try {
                     System.out.println("insert new patient connection closed ");
+//                    connection.commit();
                     connection.close();
                 } catch (SQLException e1) {
                     e1.printStackTrace();
@@ -85,6 +86,9 @@ public class InsertNewPatient extends JFrame{
                     ps.setDate(6, dateDxSql);
 
                     ps.executeUpdate();
+                    ps.close();
+
+
 
 
                 }catch(SQLException err){

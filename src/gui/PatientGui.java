@@ -24,6 +24,7 @@ public class PatientGui extends JFrame implements ActionListener{
     private JPanel patientTablePanel;
     private JTable patientTable;
     private JButton deleteButton;
+    private JButton treatmentsButton;
     String columnNames[] = {"pID", "MetastaticDx", "BirthDate","Sex","CancerType","DateDx"};
 
 
@@ -124,10 +125,10 @@ public class PatientGui extends JFrame implements ActionListener{
                 }catch (SQLException err){
                     System.out.print("[EXCEPTION]"+ err.getMessage());
                 }
-//                setVisible(true);
             }
         });
 
+        // insert a new patient record
         insertNewPatientButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
@@ -135,18 +136,26 @@ public class PatientGui extends JFrame implements ActionListener{
                 insertPat.showFrame();
 
             }
+
         });
+
+        // delete an existing patient record
         deleteButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
                 try {
                     int row = patientTable.getSelectedRow();
                     String pID = patientTable.getValueAt(row,0).toString();
-//                    pID.substring(2);
+                    pID.substring(2);
                     String sqlc = "DELETE FROM PATIENT WHERE pID=?";
                     PreparedStatement ps = connection.prepareStatement(sqlc);
                     ps.setString(1, pID);
                     ps.executeUpdate();
+
+
+
+                   refreshPatientTable();
+
                     ps.close();
 
 
@@ -158,6 +167,14 @@ public class PatientGui extends JFrame implements ActionListener{
                     e1.printStackTrace();
                 }
 
+
+            }
+        });
+        treatmentsButton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                TreatmentTherapy tt = new TreatmentTherapy();
+                tt.setVisible(true);
 
             }
         });
@@ -194,8 +211,22 @@ public class PatientGui extends JFrame implements ActionListener{
 
         this.setVisible(true);
 
+    }
 
-
+    public void refreshPatientTable(){
+        // refresh the updated table
+        searchButton.doClick();
+//        try{
+//            String query="SELECT * FROM Patient";
+//            PreparedStatement pst = connection.prepareStatement(query);
+//            ResultSet rSet = pst.executeQuery();
+//            patientTable.setModel(DbUtils.resultSetToTableModel(rSet));
+//            System.out.println("refreshed patient table");
+//        }catch(SQLException e){
+//            e.printStackTrace();
+//
+//
+//        }
 
     }
 
