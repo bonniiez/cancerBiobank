@@ -14,7 +14,7 @@ Java Swing is used for front end GUI and Java + MySQL for backend.
 <b>Instructions: </b>
 1. Configure MySQL Environment on your machine.
 2. Create a database named “cancerBiobank” 
-3. “CancerBiobank.sql” in the project will automatically import tables/data into database. 
+3. “CancerBiobank.sql” file in the project will automatically create tables/import data into database. 
 4. Download the MySQL Java connector from https://www.mysql.com/products/connector/. (It is already included in the project, but included in case of any problems)
     * Add the library manually to the project in the dependencies 
 5. Run the Main from CancerBiobank.java 
